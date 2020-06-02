@@ -109,11 +109,17 @@ body {
   padding: 0;
 }
 
+.content-wrapper {
+  width: 90%;
+}
+
 a {
   text-decoration: none;
 }
 
-/* ------------------------ Base Header and Footer Styles ------------------------
+
+
+/* -------------------------- Base Header and Footer Styles ------------------------
 ---------------------------------------------------------------------------------- */
 
 header,
@@ -124,11 +130,20 @@ footer {
   justify-content: center;
 }
 
+header {
+  padding: 15px 0;
+}
+
  header .content-wrapper {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
 }
 
 header nav {
@@ -136,12 +151,20 @@ header nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  padding: 20px 0;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 45%;
 } 
+
+footer .content-wrapper {
+  margin: 50px 0;
+  width: 55%;
+}
 
 footer .social-icons {
   align-items: center;
@@ -153,6 +176,7 @@ footer .social-icons p {
   align-items: center;
   display: flex;
   justify-content: space-around;
+  margin: 0;
 }
 
 /* --------------------------- Mobile Styles - Homepage ---------------------------
@@ -166,6 +190,10 @@ footer .social-icons p {
   justify-content: center;
 }
 
+.hero-area h1 {
+  padding-top: 55px;
+}
+
 /* Sign up or Aside Styles */
 
 aside {
@@ -173,7 +201,10 @@ aside {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  
+}
+
+aside .content-wrapper {
+  margin: 30px 0 55px 0;
 }
 
 /* Amenities or Features Styles */
@@ -184,11 +215,24 @@ aside {
   justify-content: center;
 }
 
+.features h2 {
+  padding-top: 55px;
+}
+
+.features p {
+  margin: 0;
+}
+
 .features .features-items {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.features article {
+  margin: 65px 0;
+  width: 55%;
 }
 
 /* Testimonials or Reviews Styles */
@@ -197,6 +241,11 @@ aside {
   display: flex;
   flex-flow: row wrap;
   justify-content: center; 
+}
+
+.reviews h3 {
+  padding-top: 55px;
+  width: 48%;
 }
  
 /* ------------------------------ ABOUT Page Styles ------------------------------
