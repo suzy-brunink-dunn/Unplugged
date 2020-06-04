@@ -98,18 +98,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
   
-/* Universal styles */
+
+/* -------------------------- UNIVERSAL STYLES -----------------------------------
+---------------------------------------------------------------------------------- */
 
 html {
   font-size: 16px;
 }
 
 body {
+  font-size: 1em;
   margin: 0;
   padding: 0;
 }
 
 .content-wrapper {
+  margin: 50px 0;
   width: 90%;
 }
 
@@ -117,9 +121,7 @@ a {
   text-decoration: none;
 }
 
-
-
-/* -------------------------- Base Header and Footer Styles ------------------------
+/* -------------------------- BASE HEADER AND FOOTER STYLES ------------------------
 ---------------------------------------------------------------------------------- */
 
 header,
@@ -143,6 +145,8 @@ header {
 }
 
 .header-divider {
+  height: 1px;
+  margin: 10px 0 20px 0;
   width: 100%;
 }
 
@@ -151,15 +155,22 @@ header nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  padding: 20px 0;
   width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 45%;
+  width: 100%;
 } 
+
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
 
 footer .content-wrapper {
   margin: 50px 0;
@@ -172,14 +183,23 @@ footer .social-icons {
   justify-content: space-around;
 }
 
-footer .social-icons p {
+footer .social-icons {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  margin: 0;
 }
 
-/* --------------------------- Mobile Styles - Homepage ---------------------------
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+/* --------------------------- MOBILE STYLES - HOMEPAGE ---------------------------
 ----------------------------------------------------------------------------------- */
 
 /* Hero Area Styles */
@@ -190,21 +210,13 @@ footer .social-icons p {
   justify-content: center;
 }
 
-.hero-area h1 {
-  padding-top: 55px;
-}
-
-/* Sign up or Aside Styles */
+/* Sign up Aside Styles */
 
 aside {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-}
-
-aside .content-wrapper {
-  margin: 30px 0 55px 0;
 }
 
 /* Amenities or Features Styles */
@@ -216,7 +228,7 @@ aside .content-wrapper {
 }
 
 .features h2 {
-  padding-top: 55px;
+  margin-bottom: 60px;
 }
 
 .features p {
@@ -231,11 +243,11 @@ aside .content-wrapper {
 }
 
 .features article {
-  margin: 65px 0;
-  width: 55%;
+  margin: 30px 0;
+  width: 63%;
 }
 
-/* Testimonials or Reviews Styles */
+/* Reviews Styles */
 
 .reviews {
   display: flex;
@@ -243,12 +255,16 @@ aside .content-wrapper {
   justify-content: center; 
 }
 
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
 .reviews h3 {
-  padding-top: 55px;
-  width: 48%;
+  margin: 20px 0;
+  width: 50%;
 }
  
-/* ------------------------------ ABOUT Page Styles ------------------------------
+/* ------------------------------ MOBILE STYLES - ABOUT PAGE ---------------------
 ---------------------------------------------------------------------------------- */
 
 .mission {
@@ -265,7 +281,11 @@ aside .content-wrapper {
   justify-content: center;
 }
 
-/* ------------------------------ FAQ Page Styles ------------------------------
+.contact-content p {
+  margin: 0;
+}
+
+/* ------------------------------ MOBILE STYLES - FAQ PAGE -----------------------
 ---------------------------------------------------------------------------------- */
 
 .faq {
@@ -280,6 +300,152 @@ aside .content-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center; 
+}
+
+/* --------------------------- TABLET STYLES - HOMEPAGE ---------------------------
+----------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px){
+  .content-wrapper {
+    max-width: 83%;
+    margin: 100px 0;
+  }
+  
+  /* Header Styles */
+
+  header {
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+
+  header .content-wrapper { 
+    justify-content: space-between;
+    width: 100%;
+    }
+  
+  .header-divider {
+    display: none;
+  }
+
+  header nav {
+    width: 20%;
+  }
+  
+  header nav ul {
+    justify-content: space-between;
+  } 
+
+  /* Aside Styles */
+
+  aside .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    margin: 0;
+    width: 41%;
+  }
+
+  /* Features Styles */
+
+  .features article {
+    align-items: center;
+    display: flex;
+    flex-basis: 50%;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+
+  .features .features-item-description {
+    width: 50%;
+  }
+
+  /* Reviews Styles */
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 48%;
+  }
+  
+  /* Footer Styles */
+
+  footer .content-wrapper {
+    margin: 100px 0;
+    width: 65%;
+  }
+
+  .footer-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+/* --------------------------- TABLET STYLES - FAQ PAGE -------------------------
+----------------------------------------------------------------------------------- */
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+/* --------------------------- TABLET STYLES - ABOUT PAGE -------------------------
+----------------------------------------------------------------------------------- */
+ 
+  .mission-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mission-content p {
+    width: 43%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 75%;
+  }
+
+  .contact-content {
+    align-items: center ;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* --------------------------- DESKTOP Styles --------------------------------------
+----------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1200px){
+  
+
+
+
+
+
+
+
 }
 
 
