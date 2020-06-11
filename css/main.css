@@ -117,10 +117,6 @@ body {
   width: 90%;
 }
 
-a {
-  text-decoration: none;
-}
-
 /* -------------------------- BASE HEADER AND FOOTER STYLES ------------------------
 ---------------------------------------------------------------------------------- */
 
@@ -163,6 +159,16 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
 } 
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 footer {
   flex-direction: column;
@@ -393,11 +399,13 @@ aside {
   }
 
   footer .copyright {
+    text-align: center;
     width: 100%;
   }
 
 /* --------------------------- TABLET STYLES - FAQ PAGE -------------------------
 ----------------------------------------------------------------------------------- */
+  
   .faq .content-wrapper {
     justify-content: space-between;
   }
@@ -434,23 +442,91 @@ aside {
   }
 }
 
-/* --------------------------- DESKTOP Styles --------------------------------------
+/* --------------------------- DESKTOP STYLES - HOMEPAGE --------------------------
 ----------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 1200px){
+  .content-wrapper {
+    max-width: 80%;
+  }
   
+  /* Header Styles */
 
+  header {
+    padding: 40px 0;
+  }
 
+  /* Hero Styles */
 
+  .hero-area h1 {
+    width: 58%;
+  }
 
+  /* Aside Styles */
 
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
 
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 27%;
+  }
+
+  /* Features Styles */
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .features .features-item-description {
+    width: 33%;
+  }
+
+  /* Reviews Styles */
+
+  .reviews article div {
+    width: 40%;
+  }
+
+  /* Footer Styles */
+
+  footer .content-wrapper {
+    margin: 100px 0;
+    width: 71%;
+  }
+
+  .footer-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* --------------------------- DESKTOP STYLES - FAQ PAGE ------------------------
+----------------------------------------------------------------------------------- */
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq-content {
+    flex-basis: 50%;
+  }
+
+  
+/* --------------------------- DESKTOP STYLES - ABOUT PAGE ------------------------
+----------------------------------------------------------------------------------- */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 100%;
+  }
+
+  .contact-section .content-wapper h2 {
+    margin-bottom: 100px;
+  }
 
 }
-
-
-
-
 
 /* ==========================================================================
    Helper classes
