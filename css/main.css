@@ -159,9 +159,11 @@ p {
 }
 
 img {
-  width: auto ;
-  max-width: 100% ;
-  height: auto ;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 address {
@@ -194,15 +196,19 @@ header {
   margin: 0;
 }
 
+header figure {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 60%;
+}
+
 .header-divider {
   background-color: #3a3a3a;
   height: 1px;
   margin: 10px 0 20px 0;
   width: 100%;
-}
-
-header a {
-  width: 68%;
 }
 
 header nav {
@@ -267,9 +273,12 @@ footer .copyright {
 /* Hero Area Styles */
 
 .hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat;
+  background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -318,6 +327,8 @@ input[type=button] {
 /* Amenities or Features Styles */
 
 .features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat;
+  background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -359,11 +370,9 @@ input[type=button] {
 
 .reviews h3 {
   margin: 20px 0;
-  width: 50%;
+  width: 55%;
 }
 
-
- 
 /* ------------------------------ MOBILE STYLES - ABOUT PAGE ---------------------
 ---------------------------------------------------------------------------------- 
 */
@@ -444,14 +453,18 @@ input[type=button] {
   /* Header Styles */
 
   header {
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px 0;
   }
 
   header .content-wrapper { 
     justify-content: space-between;
     width: 100%;
-    }
+  }
+
+  header figure {
+    width: 30%;
+  }
   
   .header-divider {
     display: none;
@@ -466,6 +479,10 @@ input[type=button] {
   } 
 
   /* Hero Area */
+  
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -503,7 +520,7 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews Styles */
@@ -513,10 +530,11 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews article figure, 
   .reviews article div {
-    width: 48%;
+      width: 48%;
   }
-
+  
   .reviews h2 {
     width: 85%;
   }
@@ -591,7 +609,7 @@ input[type=button] {
   }
 
   .mission-content p {
-    width: 43%;
+    width: 45%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -622,25 +640,29 @@ input[type=button] {
     padding: 40px 0;
   }
 
+  header figure {
+    width: 25%;
+  }
+
   h2 {
     font-size: 2.25em;
   }
 
   h3,
   h4 {
-      font-size: 1.875em;
+    font-size: 1.875em;
   }
 
   p {
-      font-size: 1.125em;
-      line-height: 1.33;
+    font-size: 1.125em;
+    line-height: 1.33;
   }
   
   /* Hero Styles */
 
   .hero-area h1 {
     font-size: 3.75em;
-    width: 58%;
+    width: 80%;
   }
 
   /* Aside Styles */
@@ -655,7 +677,7 @@ input[type=button] {
   }
 
   .form-description p {
-    font-size: 1.125em;
+    font-size: 1.12em;
   }
 
   /* Features Styles */
@@ -675,7 +697,7 @@ input[type=button] {
   /* Reviews Styles */
 
   .reviews article div {
-    width: 40%;
+    width: 42%;
   }
 
   .reviews h2 {
