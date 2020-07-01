@@ -168,7 +168,6 @@ figure {
 
 address {
   font-style: normal;
-  text-align: center;
 }
 
 /* -------------------------- BASE HEADER AND FOOTER STYLES ----------------------
@@ -261,10 +260,13 @@ footer .social-icons p {
   background-color: #506f56;
   border-radius: 50%;
   display: flex;
-  font-size: 1.5em;
   height: 40px;
   justify-content: center;
   width: 40px;
+}
+
+footer .social-icons p i {
+  font-size: 1.5em;
 }
 
 footer .copyright {
@@ -568,7 +570,7 @@ input[type=button] {
   .reviews h3 {
     width: 75%;
     margin: 0;
-}
+  }
   
   /* Footer Styles */
 
@@ -594,7 +596,12 @@ input[type=button] {
   }
 
   footer p {
-      line-height: 1.285;
+      line-height: 1.28;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -643,13 +650,13 @@ input[type=button] {
   }
 
   .contact-section .content-wrapper h2 {
-    width: 75%;
+    width: 80%;
   }
 
   .contact-content {
-    align-items: center ;
+    align-items: flex-start;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between
   }
 
   .contact-content h4 {
