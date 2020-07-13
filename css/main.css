@@ -144,6 +144,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.87em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -305,6 +306,10 @@ aside {
   justify-content: center;
 }
 
+aside .form-description h3 {
+  margin: 0;
+}
+
 aside .form {
   margin-top: 30px;
 }
@@ -342,7 +347,7 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .features p {
@@ -407,6 +412,7 @@ input[type=button] {
 
 .contact-content p {
   margin: 0;
+  padding: 10px 0;
 }
 
 .map figure {
@@ -451,7 +457,11 @@ input[type=button] {
 }
 
 .faq-content {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.faq-content h4 {
+  margin: 0;
 }
 
 .faq-content h4 {
@@ -527,10 +537,26 @@ input[type=button] {
     margin: 50px 0;
   }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
+  aside .form-description,
+  aside .form {
     margin: 0;
     width: 41%;
+  }
+
+  aside h3 {
+    margin-top: 0;
+  }
+
+  aside p {
+    line-height: 1.45;
+  }
+
+  input[type=text] {
+    padding: .8em;
+  }
+   
+  input[type=button] {
+    padding: 15px 0;
   }
 
   /* Features Styles */
@@ -596,7 +622,7 @@ input[type=button] {
   }
 
   footer p {
-      line-height: 1.28;
+    line-height: 1.28;
   }
 
   footer .social-icons {
@@ -624,12 +650,6 @@ input[type=button] {
     width: 100%;
   }
 
-  .faq h4,
-  .faq p {
-      font-size: .875em;
-      line-height: 1.125;
-  }
-
 /* --------------------------- TABLET STYLES - ABOUT PAGE -------------------------
 ----------------------------------------------------------------------------------- 
 */
@@ -642,7 +662,7 @@ input[type=button] {
   }
 
   .mission-content p {
-    width: 45%;
+    width: 90%;
   }
 
   .map figure {
@@ -763,14 +783,17 @@ input[type=button] {
     width: 100%;
   }
 
-  .faq h4,
+  .faq h4 {
+    font-size: 1.2em;
+    line-height: 1.12;
+  }
+
   .faq p {
-      font-size: 1.12em;
-      line-height: 1;
+    font-size: 1em;
   }
 
   .faq-content {
-    flex-basis: 50%;
+    flex-basis: 45%;
   }
 
 /* --------------------------- DESKTOP STYLES - ABOUT PAGE ------------------------
