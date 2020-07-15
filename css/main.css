@@ -412,7 +412,6 @@ input[type=button] {
 
 .contact-content p {
   margin: 0;
-  padding: 10px 0;
 }
 
 .map figure {
@@ -711,7 +710,7 @@ input[type=button] {
   }
 
   p {
-    font-size: 1.125em;
+    font-size: 1em;
     line-height: 1.33;
   }
   
@@ -731,10 +730,6 @@ input[type=button] {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 27%;
-  }
-
-  .form-description p {
-    font-size: 1.12em;
   }
 
   /* Features Styles */
